@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Detalles</title>
+</head>
+<style type="text/css">
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+
+    th {
+        font-size: 20px;
+    }
+
+    td#final {
+        font-size: 30px;
+        padding: 0%;
+        border: 0px white
+    }
+</style>
+
+<body class="container">
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <h1>Detalles</h1>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <div class="detalles">
+        <h1>Su pedido fue realizado con exito</h1>
+        <p>A continuacion los detalles..</p>
+    </div>
+
+    <br>
+    <br>
+    <center>
+        <table style="width: 90%;">
+            <tr>
+                <th colspan="2">Detalles</th>
+                <th>Direccion</th>
+            </tr>
+            <tr>
+            <tr>
+                <td>Notebook Gamer Hp</td>
+                <td>$859.990</td>
+            </tr>
+            <td>Hervidor Eléctrico 1,8 lt</td>
+            <td>$29.990</td>
+            <td id="final">Seis Norte 4879, La reina, Santiago de Chile</td>
+            <tr>
+                <td>Smartphone Galaxy S20 FE</td>
+                <td>$499.990</td>
+            </tr>
+        </table>
+        <table style="width: 90%;">
+            <td id="final">Valor total de la compra: $1.389.970 </td>
+        </table>
+    </center>
+    <form action="{% url 'principal' %}" id="formulario">
+        <div class="contornos">
+            <input type="submit" class="button" value="Aceptar" />
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <br>
+
+    <h1></h1>
+
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+                <div class="colum1">
+                    <h1>Sobre LarrainShop</h1>
+                    <p>Somos una empresa dedicada a buscar las mejores ofertas del extrajeros para asi poder
+                        vender
+                        los productos a muy buenos precios </p>
+
+                </div>
+                <div class="colum2">
+                    <h1>Redes Sociales</h1>
+                    <div class="row">
+                        <label>Siguenos en Facebook
+                            <p>LarrainShop</p>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>Siguenos en instagram
+                            <p>@LarrainShop</p>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>Siguenos en twitter
+                            <p>@LarrainShop1</p>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="colum3">
+                    <h1>Contacto</h1>
+
+                    <div class="row2"></div>
+                    <label> Ubicacion: La cisterna
+                        Chile
+                        artura pratt
+                        local #7383
+                    </label>
+                    <div class="row2"></div>
+                    <label> Contacto: +569 4563 2897
+                    </label>
+                    <div class="row2"></div>
+                    <label>Correo: larrainshop18@gmail.com
+                    </label>
+                </div>
+            </div>
+    </footer>
+
+
+</body>
+
+</html>

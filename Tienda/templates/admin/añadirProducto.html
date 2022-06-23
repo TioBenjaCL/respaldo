@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contorno">
+        <div class="row">
+            <form action="{% url 'registroP' %}" id="formulario" enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+                <h1>Ingrese Imagen</h1>
+                <br>
+                <img src="{% static 'img/ajjaja.png' %}" alt="Logo" height="115px">
+                <input type="file" id="fotografia" name="fotografia">
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="texto">Nombre del producto</label>
+                    <br>
+                    <textarea name="nombre" id="nombre" cols="50" rows="2" ></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="texto">Caracteristicas de producto</label>
+                    <br>
+                    <textarea name="Caracteristicas" id="Caracteristicas" cols="50" rows="2" placeholder=""></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="texto">Precio</label>
+                    <input type="number" id="precio" name="precio">
+                </div>
+                <br>
+                <input type="submit" class="button" value="AGREGAR" />
+                <br>
+                <br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

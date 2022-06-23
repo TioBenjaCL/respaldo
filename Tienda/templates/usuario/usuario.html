@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Mi usuario</title>
+</head>
+<style type="text/css">
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+
+    th {
+        font-size: 20px;
+    }
+</style>
+
+<body class="container">
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <h1>LarrainShop</h1>
+            </li>
+        </ul>
+    </nav>
+    <br>
+
+    <div class="confirmacion">
+        <h1>Estado de mis productos</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <table style="width: 90%;">
+            <tr>
+                <th>Estado del producto</th>
+                <th>Fecha aprox de entrega</th>
+            </tr>
+            <tr>
+                <td>Producto en camino</td>
+                <td>02/06/2021</td>
+            </tr>
+        </table>
+    </center>
+    <br>
+    <br>
+    <center>
+        <table style="width: 90%;">
+            <tr>
+                <th colspan="2">Producto</th>
+                <th>Valor Producto</th>
+            </tr>
+            <tr>
+            <tr>
+                <td><img src="{% static 'img/pc hpp.jpg' %}" width="200px" height="150px"></td>
+                <td>Notebook Gamer Hp</td>
+                <td>$859.990</td>
+            </tr>
+            <td><img src="{% static 'img/hervidor.jpg' %}" width="200px" height="150px"></td>
+            <td>Hervidor Eléctrico 1,8 lt</td>
+            <td>$29.990</td>
+            <tr>
+                <td><img src="{% static 'img/fe.jpg' %}" width="200px" height="150px"></td>
+                <td>Smartphone Galaxy S20 FE</td>
+                <td>$499.990</td>
+            </tr>
+        </table>
+    </center>
+    <center>
+        <table style="width: 90%;">
+            <td id="final">Direccion: Seis Norte 4879, La reina, Santiago de Chile </td>
+        </table>
+
+        <table style="width: 90%; ">
+            <td id="final">Valor total de la compra: $1.389.970 </td>
+        </table>
+    </center>
+    <br>
+    <form action="{% url 'principal' %}" id="formulario">
+        <div class="contornos">
+            <input type="submit" class="button" value="Volver" />
+        </div>
+    </form>
+
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+                <div class="colum1">
+                    <h1>Sobre LarrainShop</h1>
+                    <p>Somos una empresa dedicada a buscar las mejores ofertas del extrajeros para asi poder vender
+                        los productos a muy buenos precios </p>
+
+                </div>
+                <div class="colum2">
+                    <h1>Redes Sociales</h1>
+                    <div class="row">
+                        <label>Siguenos en Facebook
+                            <p>LarrainShop</p>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>Siguenos en instagram
+                            <p>@LarrainShop</p>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>Siguenos en twitter
+                            <p>@LarrainShop1</p>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="colum3">
+                    <h1>Contacto</h1>
+
+                    <div class="row2"></div>
+                    <label> Ubicacion: La cisterna
+                        Chile
+                        artura pratt
+                        local #7383
+                    </label>
+                    <div class="row2"></div>
+                    <label> Contacto: +569 4563 2897
+                    </label>
+                    <div class="row2"></div>
+                    <label>Correo: larrainshop18@gmail.com
+                    </label>
+                </div>
+            </div>
+    </footer>
+
+
+</body>
+
+</html>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="icon" type="image/jpg" href="/imagenes/Logo.png">
+    <title>LarrainShop</title>
+
+</head>
+
+<body class="fondo">
+    <nav>
+        <div class="logo">
+            <a href="/carrito.html"><img src="{% static 'img/carrito.png' %}" alt="Logo" height="50px"></a>
+        </div>
+        <div class="logo">
+            <a href="/usuario.html"><img src="{% static 'img/usuario.png' %}" alt="Logo" height="50px"></a>
+        </div>
+        <ul class="nav-links">
+            <li class="navegacion">
+                <a href="{% url 'principal1' %}">Inicio</a>
+            </li>
+            <li>
+                <a href="{% url 'productos' %}">Productos</a>
+            </li>
+            <li>
+                <a href="{% url 'ofertas' %}">Ofertas</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="frase">
+            LarrainShop
+        </h1>
+        <br>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <article>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/lavadora.jpg' %}" class="card-img-top" alt="vegetariana">
+                        <div class="card-body">
+                            {% block productos %}
+                            {% endblock productos %}
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+                    </div>
+                </div>

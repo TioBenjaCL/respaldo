@@ -1,0 +1,197 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="icon" type="image/jpg" href="/imagenes/Logo.png">
+    <title>LarrainShop</title>
+
+</head>
+
+<body class="fondo">
+    <nav>
+        <div class="logo">
+            <a href="{% url 'carrito' %}"><img src="{% static 'img/carrito.png' %}" alt="Logo" height="50px"></a>
+        </div>
+        <div class="logo">
+            <a href="{% url 'usuario' %}"><img src="{% static 'img/usuario.png' %}" alt="Logo" height="50px"></a>
+        </div>
+        <ul class="nav-links">
+            <li class="navegacion">
+                <a href="{% url 'principal' %}">Inicio</a>
+            </li>
+            <li>
+                <a href="{% url 'productos' %}">Productos</a>
+            </li>
+            <li>
+                <a href="{% url 'ofertas' %}">Ofertas</a>
+            </li>
+            <li>
+                <a href="{% url 'inicio_sesion' %}">iniciar sesion</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="frase">
+            LarrainShop
+        </h1>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    <h2 class="espacio">
+    </h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href=""><img src="{% static 'img/imagen1.png' %}" class="d-block w-100" alt="bootstrap"
+                                    width="620px" height="450px"></a>
+
+                        </div>
+                        <div class="carousel-item">
+                            <a href=><img src="{% static 'img/imagen2.jpg' %}" class="d-block w-100" alt="..." width="674 "
+                                    height="450"> </a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <article>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/S20.jpg' %}" class="card-img-top" alt="vegetariana">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung Galaxy S20</h5>
+                            <li>Camara de 40mp</li>
+                            <li>Tamaño de pantalla:6,5 pul</li>
+                            <li>Memoria:128gb</li>
+                            <li>Ram:8gb</li>
+                            <br>
+                            <h1>valor $499.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/Cafetera.jpg' %}" card-img-top" alt="Premium">
+                        <div class="card-body">
+                            <h5 class="card-title">Cafetera con filtro </h5>
+                            <li>tipo cafe:molido</li>
+                            <li>capacidad:1.8lt</li>
+                            <li>espumador:si</li>
+                            <br>
+                            <h1> valor $29.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/pc hpp.jpg' %}" class="card-img-top" alt="pizzas del mundo">
+                        <div class="card-body">
+                            <h5 class="card-title">Notebook Gamer Hp</h5>
+                            <br>
+                            <li>Procesador: intel core i5</li>
+                            <li>Grafica: nividia Gtx1050</li>
+                            <li>Tamaño pantalla: 15.6 pul</li>
+                            <li>Disco duro: 500Gb</li>
+                            <br>
+                            <h1>valor $859.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+    </article>
+    <br>
+
+    <h5 class="espacio4"></h5>
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+                <div class="colum1">
+                    <h1>Sobre LarrainShop</h1>
+                    <p>Somos una empresa dedicada a buscar las mejores ofertas del extrajeros para asi poder vender
+                        los productos a muy buenos precios </p>
+
+                </div>
+                <div class="colum2">
+                    <h1>Redes Sociales</h1>
+                    <div class="row">
+                        <label>Siguenos en Facebook
+                            <p>LarrainShop</p>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>Siguenos en instagram
+                            <p>@LarrainShop</p>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>Siguenos en twitter
+                            <p>@LarrainShop1</p>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="colum3">
+                    <h1>Contacto</h1>
+
+                    <div class="row2"></div>
+                    <label> Ubicacion: La cisterna
+                        Chile
+                        artura pratt
+                        local #7383
+                    </label>
+                    <div class="row2"></div>
+                    <label> Contacto: +569 4563 2897
+                    </label>
+                    <div class="row2"></div>
+                    <label>Correo: larrainshop18@gmail.com
+                    </label>
+                </div>
+            </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

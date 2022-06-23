@@ -1,0 +1,22 @@
+{% extends 'usuario/plantillaProducto.html' %}
+{% load static %}
+
+{% block cabecera %}
+    <title>Ejemplo</title>
+
+{% endblock cabecera %}   
+
+{% block productos %}
+<div>
+    <img src="{% static 'lavadora.jgp' %}" alt="">
+</div>
+<div>
+    <h3><b>Nombre: </b>{{ nombreProducto }}</h3>
+    <h3><b>Tipo: </b>{{ tipoProducto }}</h3>
+</div>
+<div>
+    &nbsp;
+</div>
+{% endblock productos %}
+</body>
+</html>

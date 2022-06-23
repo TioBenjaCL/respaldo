@@ -1,0 +1,314 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <h1>inicio</h1>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #1a2537;">
+            <a class="navbar-brand">LarrainShop</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="container">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'Principal_Admin' %}">Lista de ofertas<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Traslado_Admin' %}">Resumen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Resumen_A' %}">Translado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Resumen_total' %}">Ventas Totales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'Mod_Ofertas' %}">Modificar Ofertas</a>
+                  </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <h1 style="font-size: 30px; text-align: center;">Modificacion de Ofertas</h1>
+    <br>
+    <article>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/lavadora.jpg' %}" class="card-img-top" alt="vegetariana">
+                        <div class="card-body">
+                            <h5 class="card-title">Secadora Eléctrica Galanz</h5>
+                            <li>Profundidad: 55.5</li>
+                            <li>Potencia: 1850</li>
+                            <li>Tipo: Secarropas</li>
+                            <li>Hecho en: China</li>
+                            <br>
+                            <h1>valor $159.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/hervidor.jpg' %}" card-img-top" alt="Premium">
+                        <div class="card-body">
+                            <h5 class="card-title">Hervidor Eléctrico 1,8 lt </h5>
+                            <li>Capacidad (lt): 1,8 lt</li>
+                            <li>espumador:si</li>
+                            <li>Panel de temperatura: No</li>
+                            <li>Apagado automático: Sí</li>
+                            <br>
+                            <h1> valor $29.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/Microndas.jpg' %}" class="card-img-top" alt="pizzas del mundo">
+                        <div class="card-body">
+                            <h5 class="card-title">Microondas 30</h5>
+                            <br>
+                            <li>Capacidad (lt): 30 lt</li>
+                            <li>Tipo de pantalla: Digital</li>
+                            <li>Potencia: 900</li>
+                            <li>Tipo: Microondas</li>
+                            <br>
+                            <h1>valor $89.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+    </article>
+
+    <h1 class="margen"></h1>
+
+    <article>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/mac.jpg' %}" class="card-img-top" alt="vegetariana">
+                        <div class="card-body">
+                            <h5 class="card-title">MacBook Air M1 8GB RAM 256GB </h5>
+                            <li>Procesador: No aplica</li>
+                            <li>PDisco duro HDD: No tiene</li>
+                            <li>Tamaño de la pantalla: 13.3 pulgadas</li>
+                            <li>Unidad de estado sólido SSD: 256Gb</li>
+                            <br>
+                            <h1>valor $979.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/monitor.jpg' %}" card-img-top" alt="Premium">
+                        <div class="card-body">
+                            <h5 class="card-title">Monitor V22 Full HD 1920x1080 VGA </h5>
+                            <li>Tipo: Monitores Led</li>
+                            <li>Alto: 38.12 cm</li>
+                            <li>Ancho: 50.5 cm</li>
+                            <li>Profundidad: 18.1 cm</li>
+                            <li>Peso: 2.85 kg</li>
+                            <br>
+                            <h1> valor $129.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/hifi.jpg' %}" class="card-img-top" alt="pizzas del mundo">
+                        <div class="card-body">
+                            <h5 class="card-title">Audífono Inalámbrico </h5>
+                            <br>
+                            <li>Tipo: Audífonos deportivos</li>
+                            <li>Potencia: 35mW</li>
+                            <li>Audio HQ: No Aplica</li>
+                            <li>Aislador de sonido: Sí</li>
+                            <li>Frecuencia: 20~20KHz</li>
+                            <br>
+                            <h1>valor $ 34.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+    </article>
+    <h1 class="margen"></h1>
+
+    <article>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/huawei.jpg' %}" class="card-img-top" alt="vegetariana">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone P40 Lite </h5>
+                            <li>Cámara principal: Sobre 40MP</li>
+                            <li>Cámara frontal: 16MP</li>
+                            <li>Tamaño de la pantalla: 6.4 pulgadas</li>
+                            <li>Memoria interna: 128GB</li>
+                            <li>Núcleos del procesador: Octa Core</li>
+                            <br>
+                            <h1>valor $259.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/s21.jpg' %}" card-img-top" alt="Premium">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone Galaxy S21</h5>
+                            <li>Cámara principal: 40MP</li>
+                            <li>Cámara frontal: 10MP</li>
+                            <li>Tamaño de la pantalla: 6.2 pulgadas</li>
+                            <li>Memoria interna: 128GB</li>
+                            <li>Núcleos del procesador: Octa Core</li>
+                            <br>
+                            <h1> valor $729.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/iphoone.jpg' %}" class="card-img-top" alt="pizzas del mundo">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone iPhone XR</h5>
+                            <br>
+                            <li>Tipo: Smartphones</li>
+                            <li>Conexión Bluetooth: Sí</li>
+                            <li>GPS integrado: Sí</li>
+                            <li>Núcleos del procesador: Hexa Core</li>
+                            <li>Tipo de pantalla: LCD</li>
+                            <br>
+                            <h1>valor $499.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+    </article>
+    <h1 class="margen"></h1>
+
+    <article>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/fe.jpg' %}" class="card-img-top" alt="vegetariana">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone Galaxy S20 FE</h5>
+                            <p>valor antes $549.990</p>
+                            <li>Cámara frontal: 32MP</li>
+                            <li>Tamaño de la pantalla: 6.5 pulgadas</li>
+                            <li>Memoria interna: 128GB</li>
+                            <li>Núcleos del procesador: Octa Core</li>
+                            <li>Memoria expandible: Sobre 512GB</li>
+                            <br>
+                            <h1>valor ahora $499.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/bmax.jpg' %}" card-img-top" alt="Premium">
+                        <div class="card-body">
+                            <h5 class="card-title">Ntbk Bmax 2 En 1</h5>
+                            <p> valor antes $ 699.990</p>
+                            <li>Disco duro HDD: No tiene</li>
+                            <li>Profundidad: 17</li>
+                            <li>Unidad óptica: No</li>
+                            <li>Tamaño de la pantalla: 11.6 pulgadas</li>
+                            <li>Memoria RAM: 8GB</li>
+                            <br>
+                            <h1> valor $349.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/tv.jpg' %}" class="card-img-top" alt="pizzas del mundo">
+                        <div class="card-body">
+                            <h5 class="card-title">LED 58" RLED-L58D1200A 4K Ultra HD</h5>
+                            <p>valor antes $ 319.990 </p>
+                            <br>
+                            <li>Tamaño de la pantalla: 58 pulgadas</li>
+                            <li>Resolución: 4K Ultra HD</li>
+                            <li>Tecnología: LED</li>
+                            <li>Conexión Bluetooth: Sí</li>
+                            <li>Entradas USB: 2</li>
+                            <br>
+                            <h1>valor $289.990</h1>
+                            <br>
+                            <a href="{% url 'Modificacion' %}"><input type="submit" class="button" value="Modificar" /></a>
+                        </div>
+                        <a class="btn btn-primary" href="{% url 'añadirProducto' %}">agregar nuevo producto</a>
+    </article>
+
+    
+
+    
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

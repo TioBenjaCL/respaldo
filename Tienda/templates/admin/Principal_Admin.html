@@ -1,0 +1,273 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <h1>inicio</h1>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #1a2537;">
+            <a class="navbar-brand">LarrainShop</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="container">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'Principal_Admin' %}">Lista de ofertas<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Traslado_Admin' %}">Resumen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Resumen_A' %}">Translado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Resumen_total' %}">Ventas Totales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'Mod_Ofertas' %}">Modificar Ofertas</a>
+                  </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <h1 style="font-size: 30px; text-align: center;">Lista de ofertas</h1>
+    <br>
+    <div class="container">
+
+        <table class="table table-sm table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre Proveedor</th>
+                <th scope="col">Producto En oferta</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Contacto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">#1</th>
+                <td>Mark Gutierrez</td>
+                <td>Cafetera Thomson 1,7 lts</td>
+                <td>27</td>
+                <td>MarkGut@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#2</th>
+                <td>Jacob Fernandez</td>
+                <td> Samsung Galaxy s20 128Gb</td>
+                <td>39</td>
+                <td>frenandezj@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#3</th>
+                <td>Jose Ignacio</td>
+                <td>Notebook Gamer Asus 1Tb</td>
+                <td>34</td>
+                <td>jseina@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#4</th>
+                <td>Alexis Carrasco</td>
+                <td>Lavadora LG 40Kg</td>
+                <td>37</td>
+                <td>CrrascoA@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#5</th>
+                <td>Vicentes Morales</td>
+                <td>Television Smart Tv Philips</td>
+                <td>25</td>
+                <td>VImorATES@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#6</th>
+                <td>Mark Gutierrez</td>
+                <td>Cafetera Thomson 1,7 lts</td>
+                <td>27</td>
+                <td>MarkGut@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#7</th>
+                <td>Jacob Fernandez</td>
+                <td> Samsung Galaxy s20 128Gb</td>
+                <td>39</td>
+                <td>frenandezj@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#8</th>
+                <td>Jose Ignacio</td>
+                <td>Notebook Gamer Asus 1Tb</td>
+                <td>34</td>
+                <td>jseina@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#9</th>
+                <td>Alexis Carrasco</td>
+                <td>Lavadora LG 40Kg</td>
+                <td>37</td>
+                <td>CrrascoA@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#10</th>
+                <td>Vicentes Morales</td>
+                <td>Television Smart Tv Philips</td>
+                <td>25</td>
+                <td>VImorATES@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#11</th>
+                <td>Mark Gutierrez</td>
+                <td>Cafetera Thomson 1,7 lts</td>
+                <td>27</td>
+                <td>MarkGut@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#12</th>
+                <td>Jacob Fernandez</td>
+                <td> Samsung Galaxy s20 128Gb</td>
+                <td>39</td>
+                <td>frenandezj@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#13</th>
+                <td>Jose Ignacio</td>
+                <td>Notebook Gamer Asus 1Tb</td>
+                <td>34</td>
+                <td>jseina@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#14</th>
+                <td>Alexis Carrasco</td>
+                <td>Lavadora LG 40Kg</td>
+                <td>37</td>
+                <td>CrrascoA@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#15</th>
+                <td>Vicentes Morales</td>
+                <td>Television Smart Tv Philips</td>
+                <td>25</td>
+                <td>VImorATES@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#16</th>
+                <td>Mark Gutierrez</td>
+                <td>Cafetera Thomson 1,7 lts</td>
+                <td>27</td>
+                <td>MarkGut@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#17</th>
+                <td>Jacob Fernandez</td>
+                <td> Samsung Galaxy s20 128Gb</td>
+                <td>39</td>
+                <td>frenandezj@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#18</th>
+                <td>Jose Ignacio</td>
+                <td>Notebook Gamer Asus 1Tb</td>
+                <td>34</td>
+                <td>jseina@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#19</th>
+                <td>Alexis Carrasco</td>
+                <td>Lavadora LG 40Kg</td>
+                <td>37</td>
+                <td>CrrascoA@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#20</th>
+                <td>Vicentes Morales</td>
+                <td>Television Smart Tv Philips</td>
+                <td>25</td>
+                <td>VImorATES@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#21</th>
+                <td>Mark Gutierrez</td>
+                <td>Cafetera Thomson 1,7 lts</td>
+                <td>27</td>
+                <td>MarkGut@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#22</th>
+                <td>Jacob Fernandez</td>
+                <td> Samsung Galaxy s20 128Gb</td>
+                <td>39</td>
+                <td>frenandezj@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#23</th>
+                <td>Jose Ignacio</td>
+                <td>Notebook Gamer Asus 1Tb</td>
+                <td>34</td>
+                <td>jseina@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#24</th>
+                <td>Alexis Carrasco</td>
+                <td>Lavadora LG 40Kg</td>
+                <td>37</td>
+                <td>CrrascoA@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">#25</th>
+                <td>Vicentes Morales</td>
+                <td>Television Smart Tv Philips</td>
+                <td>25</td>
+                <td>VImorATES@gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

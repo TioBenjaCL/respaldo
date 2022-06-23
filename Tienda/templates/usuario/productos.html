@@ -1,0 +1,282 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="icon" type="image/jpg" href="/imagenes/Logo.png">
+    <title>LarrainShop</title>
+
+</head>
+
+<body class="fondo">
+    <nav>
+        <div class="logo">
+            <a href="{% url 'carrito' %}"><img src="{% static 'img/carrito.png' %}" alt="Logo" height="50px"></a>
+        </div>
+        <div class="logo">
+            <a href="{% url 'usuario' %}"><img src="{% static 'img/usuario.png' %}" alt="Logo" height="50px"></a>
+        </div>
+        <ul class="nav-links">
+            <li class="navegacion">
+                <a href="{% url 'logiado' %}">Inicio</a>
+            </li>
+            <li>
+                <a href="{% url 'productos' %}">Productos</a>
+            </li>
+            <li>
+                <a href="{% url 'ofertas' %}">Ofertas</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="frase">
+            LarrainShop
+        </h1>
+        <br>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <article>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/lavadora.jpg' %}" class="card-img-top" alt="vegetariana">
+                        <div class="card-body">
+                            <h5 class="card-title">Secadora Eléctrica Galanz</h5>
+                            <li>Profundidad: 55.5</li>
+                            <li>Potencia: 1850</li>
+                            <li>Tipo: Secarropas</li>
+                            <li>Hecho en: China</li>
+                            <br>
+                            <h1>valor $159.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/hervidor.jpg' %}" card-img-top" alt="Premium">
+                        <div class="card-body">
+                            <h5 class="card-title">Hervidor Eléctrico 1,8 lt </h5>
+                            <li>Capacidad (lt): 1,8 lt</li>
+                            <li>espumador:si</li>
+                            <li>Panel de temperatura: No</li>
+                            <li>Apagado automático: Sí</li>
+                            <br>
+                            <h1> valor $29.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/microndas.jpg' %}" class="card-img-top" alt="pizzas del mundo">
+                        <div class="card-body">
+                            <h5 class="card-title">Microondas 30</h5>
+                            <br>
+                            <li>Capacidad (lt): 30 lt</li>
+                            <li>Tipo de pantalla: Digital</li>
+                            <li>Potencia: 900</li>
+                            <li>Tipo: Microondas</li>
+                            <br>
+                            <h1>valor $89.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+    </article>
+
+    <h1 class="margen"></h1>
+
+    <article>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/mac.jpg' %}" class="card-img-top" alt="vegetariana">
+                        <div class="card-body">
+                            <h5 class="card-title">MacBook Air M1 8GB RAM 256GB </h5>
+                            <li>Procesador: No aplica</li>
+                            <li>PDisco duro HDD: No tiene</li>
+                            <li>Tamaño de la pantalla: 13.3 pulgadas</li>
+                            <li>Unidad de estado sólido SSD: 256Gb</li>
+                            <br>
+                            <h1>valor $979.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/monitor.jpg' %}" card-img-top" alt="Premium">
+                        <div class="card-body">
+                            <h5 class="card-title">Monitor V22 Full HD 1920x1080 VGA </h5>
+                            <li>Tipo: Monitores Led</li>
+                            <li>Alto: 38.12 cm</li>
+                            <li>Ancho: 50.5 cm</li>
+                            <li>Profundidad: 18.1 cm</li>
+                            <li>Peso: 2.85 kg</li>
+                            <br>
+                            <h1> valor $129.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/hifi.jpg' %}" class="card-img-top" alt="pizzas del mundo">
+                        <div class="card-body">
+                            <h5 class="card-title">Audífono Inalámbrico </h5>
+                            <br>
+                            <li>Tipo: Audífonos deportivos</li>
+                            <li>Potencia: 35mW</li>
+                            <li>Audio HQ: No Aplica</li>
+                            <li>Aislador de sonido: Sí</li>
+                            <li>Frecuencia: 20~20KHz</li>
+                            <br>
+                            <h1>valor $ 34.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+    </article>
+
+    <h1 class="margen"></h1>
+
+    <article>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/huawei.jpg' %}" class="card-img-top" alt="vegetariana">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone P40 Lite </h5>
+                            <li>Cámara principal: Sobre 40MP</li>
+                            <li>Cámara frontal: 16MP</li>
+                            <li>Tamaño de la pantalla: 6.4 pulgadas</li>
+                            <li>Memoria interna: 128GB</li>
+                            <li>Núcleos del procesador: Octa Core</li>
+                            <br>
+                            <h1>valor $259.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/s21.jpg' %}" card-img-top" alt="Premium">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone Galaxy S21</h5>
+                            <li>Cámara principal: 40MP</li>
+                            <li>Cámara frontal: 10MP</li>
+                            <li>Tamaño de la pantalla: 6.2 pulgadas</li>
+                            <li>Memoria interna: 128GB</li>
+                            <li>Núcleos del procesador: Octa Core</li>
+                            <br>
+                            <h1> valor $729.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/iphoone.jpg' %}" class="card-img-top" alt="pizzas del mundo">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone iPhone XR</h5>
+                            <br>
+                            <li>Tipo: Smartphones</li>
+                            <li>Conexión Bluetooth: Sí</li>
+                            <li>GPS integrado: Sí</li>
+                            <li>Núcleos del procesador: Hexa Core</li>
+                            <li>Tipo de pantalla: LCD</li>
+                            <br>
+                            <h1>valor $499.990</h1>
+                            <br>
+                            <a href="{% url 'carrito' %}"><input type="button" class="button" value="Comprar" /></a>
+                        </div>
+    </article>
+
+    <br>
+
+    <h5 class="espacio4"></h5>
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+                <div class="colum1">
+                    <h1>Sobre LarrainShop</h1>
+                    <p>Somos una empresa dedicada a buscar las mejores ofertas del extrajeros para asi poder vender
+                        los productos a muy buenos precios </p>
+
+                </div>
+                <div class="colum2">
+                    <h1>Redes Sociales</h1>
+                    <div class="row">
+                        <label>Siguenos en Facebook
+                            <p>LarrainShop</p>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>Siguenos en instagram
+                            <p>@LarrainShop</p>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>Siguenos en twitter
+                            <p>@LarrainShop1</p>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="colum3">
+                    <h1>Contacto</h1>
+
+                    <div class="row2"></div>
+                    <label> Ubicacion: La cisterna
+                        Chile
+                        artura pratt
+                        local #7383
+                    </label>
+                    <div class="row2"></div>
+                    <label> Contacto: +569 4563 2897
+                    </label>
+                    <div class="row2"></div>
+                    <label>Correo: larrainshop18@gmail.com
+                    </label>
+                </div>
+            </div>
+
+            <h1 class="margen"></h1>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
